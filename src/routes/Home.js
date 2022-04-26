@@ -25,7 +25,7 @@ class Home extends React.Component{
         {isLoding ? (<div className='loader'><span className='loader__text'>'로딩중...'</span></div>) : 
           (<div className='movies'>
             {movies.map((movie)=>{
-              return <Movie
+              return (<Movie
                 key={movie.id}
                 id={movie.id}
                 year={movie.year}
@@ -33,7 +33,7 @@ class Home extends React.Component{
                 summary={movie.summary}
                 poster={movie.medium_cover_image}
                 genres={movie.genres}
-              />;
+              />);
             })}
           </div>)
         }

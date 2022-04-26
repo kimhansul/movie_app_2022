@@ -7,11 +7,17 @@
     margin: 100px auto 0;
     max-width: 400px;
     font-weight: 300;
+    line-height: 1.7;
 }
-.about__container span:first-child{
-    font-size: 20px;
+.about__container>span:first-child{
+    font-size: 18px;
 }
-.about__container span:last-child{
+.about__container>span:last-child{
     display: block;
     margin-top: 10px;
+    text-align: right;
+}
+.about__name{
+    display: inline-block;
+    margin-right: 10px;
 }
